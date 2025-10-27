@@ -1,0 +1,164 @@
+/* General Body Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form / Dashboard / Quiz Containers */
+.form-container,
+.dashboard-container,
+.quiz-container {
+  max-width: 350px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Headings */
+h2, h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.02);
+}
+
+/* Dashboard Buttons Grid */
+.dashboard-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.dashboard-buttons button {
+  width: 100%;
+  padding: 15px 0;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+/* Quiz Cards */
+.quiz-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 6px solid #4caf50;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: left;
+}
+
+.quiz-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.quiz-card h4 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* Options List */
+.options-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.options-list li {
+  margin-bottom: 12px;
+}
+
+.options-list input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Submit Button */
+.submit-btn {
+  display: block;
+  margin: 25px auto 0 auto;
+  padding: 12px 35px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Score Text */
+.score-text {
+  text-align: center;
+  font-size: 22px;
+  color: #4caf50;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Responsive Table for Leaderboard */
+table {
+  width: 90%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table th {
+  background: #4caf50;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background: #f2f2f2;
+}
